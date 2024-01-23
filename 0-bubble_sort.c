@@ -1,5 +1,4 @@
 #include "sort.h"
-#include <stddef.h>
 
 /**
  * bubble_sort - function arranges the arrays in ascending using bubble sort
@@ -10,20 +9,20 @@
 void bubble_sort(int *array, size_t size)
 {
 
-	size_t i, index;
-	int tmp;
+	size_t i, j;
+	int temp;
 
 	if (size < 2)
 		return;
 	for (i = 0; i < size - 1; i++)
 	{
-		for (index = 0; index < size - i - 1; index++)
+		for (j = 0; j < size - i - 1; j++)
 		{
-			if (array[index] > array[index + +1])
+			if (array[j] > array[j + +1])
 			{
-			tmp = array[index];
-			array[index] = array[index + 1];
-			array[index + 1] = tmp;
+			temp = array[j];
+			array[j] = array[j + 1];
+			array[j + 1] = temp;
 			print_array(array, size);
 			}
 		}
