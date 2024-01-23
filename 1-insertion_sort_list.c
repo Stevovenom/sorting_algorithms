@@ -22,6 +22,7 @@ void insertion_sort_list(listint_t **list)
 		node = node->next;
 	}
 }
+
 /**
  *swap_node - It swaps a node from its initial position
  *@node: pointer to the current node
